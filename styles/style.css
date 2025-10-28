@@ -8,7 +8,7 @@
   background-attachment: fixed;
   background-color: #1A232E;
   background-repeat: no-repeat;
-  width: 100%;
+  inline-size: 100lvw;
   font-size: var(--text-size);
   font-weight: 400;
   font-family: var(--main-font, sans-serif);
@@ -41,6 +41,7 @@
   height: 100lvh;
   min-height: 668px;
   position: relative;
+  padding: 0 10px;
 }
 
 .header_span {
@@ -91,6 +92,7 @@
   font-size: var(--main-title-size);
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--accent-title-color);
+  line-height: 82.5%;
 }
 
 .content {
@@ -100,7 +102,7 @@
 }
 
 .content__section {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .title-decor {
@@ -130,12 +132,14 @@
   font-size: var(--text-size);
   color: #000028;
   margin-block-end: 10px;
+  width: 100%;
 }
   
 .section__reasons-text {
     color: var(--font-color);
     font-weight: 400;
     margin-bottom: 20px;
+    line-height: 23.4px;
 }
   
 .section__reasons-text:not(:last-child) {
