@@ -3,6 +3,7 @@
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #FFF1F7;
   --accent-color: #FF8DCB;
+  --menu-font-color: #353430;
   --font-color: #353430;
   --main-font: IBM Plex Mono;
   --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -15,9 +16,14 @@
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #FFF1F7;
   --accent-color: #FF8DCB;
+  --menu-font-color: #353430;
   --font-color: #353430;
   --main-font: IBM Plex Mono;
   --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-size: 18px;
   --accent-title-color: #FFC2E6;
+}
+
+html.theme-light .header_span {
+  display: none;
 }

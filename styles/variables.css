@@ -2,6 +2,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --accent-color: #FF0070;
+  --menu-font-color: #FF0070;
   --font-color: #F1B2CE;
   --main-font: IBM Plex Mono;
   --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
