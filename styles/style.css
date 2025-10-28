@@ -8,7 +8,7 @@
   background-attachment: fixed;
   background-color: #1A232E;
   background-repeat: no-repeat;
-  inline-size: 100lvw;
+  width: 100%;
   font-size: var(--text-size);
   font-weight: 400;
   font-family: var(--main-font, sans-serif);
@@ -41,7 +41,6 @@
   height: 100lvh;
   min-height: 668px;
   position: relative;
-  padding: 0 10px;
 }
 
 .header_span {
@@ -97,6 +96,7 @@
 .content {
   background-color: var(--bg-color);
   padding: 40px 10px 0;
+  width: 100%;
 }
 
 .content__section {
@@ -112,8 +112,10 @@
 .header__paragraph {
   color: var(--font-color);
   font-weight: 700;
-  line-height: 23px;
+  line-height: 23.4px;
   font-family: var(--main-font, sans-serif);
+  margin-block-end: 66px;
+  
 }
 
 .section__reasons-title {
@@ -133,6 +135,7 @@
 .section__reasons-text {
     color: var(--font-color);
     font-weight: 400;
+    margin-bottom: 20px;
 }
   
 .section__reasons-text:not(:last-child) {
@@ -192,9 +195,8 @@
   }
 
   .header__paragraph {
-    width: 364px;
     justify-self: right;
-     margin-bottom: 60px;
+    margin-bottom: 60px;
     line-height: 23.4px;
   }
 
@@ -211,9 +213,7 @@
     grid-column: 2;
   }
 
-  .section__reasons-title {
-    inline-size: 236px;
-  }
+  
     
   .cover-for-gallery {
     display: grid;
