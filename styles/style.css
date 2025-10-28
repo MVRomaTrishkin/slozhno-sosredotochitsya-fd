@@ -126,17 +126,13 @@
     margin-block-end: 10px;
   }
   
-  .section__reasons-text{
+  .section__reasons-text {
       color: var(--font-color);
       font-weight: 400;
   }
   
   .section__reasons-text:not(:last-child) {
     margin-block-end: 20px;
-  }
-
-  .section__reasons-text:last-child {
-    margin-bottom: 50px;
   }
 
   .text-link {
