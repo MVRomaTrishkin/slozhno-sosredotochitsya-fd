@@ -12,6 +12,7 @@
   block-size: 100%;
   font: 400 var(--text-size) var(--main-font, sans-serif);
   scrollbar-width: auto;
+  padding: 0 10px;
 }
 
 .header__theme-menu {
@@ -45,7 +46,7 @@
   height: 100vh;
   min-height: 668px;
   grid-template-rows: 1fr min-content 1fr;
-  margin-bottom: 38px;
+  margin-bottom: 20px;
 }
 
 .header_span {
@@ -88,7 +89,7 @@
   border-bottom: 1px solid var(--menu-font-color);
   border-left: 1px solid var(--menu-font-color);
   left: 5px;
-  bottom: 10px;
+  bottom: 30px;
 }
 
 .header__title {
@@ -96,12 +97,13 @@
   font-size: var(--main-title-size);
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
+  margin: 5px 0px 25px 4px;
 }
 
 .header__paragraph  {
   align-self: center;
-  justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 55px;
+  margin-left: 4px;
 }
 
 .content {
@@ -123,8 +125,8 @@
 .section__reasons-text {
   color: var(--font-color);
   font: 700 var(--text-size) / 23.4px var(--main-font, sans-serif);
-  margin-bottom: 20px;
-  padding-left: 1px;
+  margin-bottom: 17px;
+  padding-left: 5px;
 }
 
 .section__reasons-title {
@@ -138,6 +140,7 @@
   font-size: var(--text-size);
   margin-block-end: 11px;
   width: 100%;
+  margin-left: 4px;
 }
 
 .text-link {
@@ -157,6 +160,7 @@
   color: #353430;
   font-weight: bold;
   margin-block-end: 20px;
+  margin-left: 5px;
 }
 
 .section__reasons-subtitle.title-decor-last {
