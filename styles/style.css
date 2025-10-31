@@ -12,6 +12,7 @@
   block-size: 100%;
   font: 400 var(--text-size) var(--main-font, sans-serif);
   scrollbar-width: auto;
+  line-height: 23.5px;
   padding: 0 10px;
 }
 
@@ -46,12 +47,10 @@
   height: 100vh;
   min-height: 668px;
   grid-template-rows: 1fr min-content 1fr;
-  margin-bottom: 20px;
 }
-
 .header_span {
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 10px;
   color: var(--menu-font-color);
   block-size: 26px;
@@ -82,14 +81,14 @@
   border-top: 1px solid var(--menu-font-color);
   border-right: 1px solid var(--menu-font-color);
   top: 10px;
-  right: -4px ;
+  right: 10px ;
 }
 
 .header::after {
   border-bottom: 1px solid var(--menu-font-color);
   border-left: 1px solid var(--menu-font-color);
-  left: 5px;
-  bottom: 30px;
+  left: 10px;
+  bottom: 10px;
 }
 
 .header__title {
@@ -97,13 +96,10 @@
   font-size: var(--main-title-size);
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
-  margin: 5px 0px 25px 4px;
 }
 
 .header__paragraph  {
   align-self: center;
-  margin-bottom: 55px;
-  margin-left: 4px;
 }
 
 .content {
@@ -112,7 +108,11 @@
 }
 
 .content__section {
-  margin-bottom: 50px;
+  padding-top: 50px ;
+}
+
+.content__section:first-child {
+  padding-top: 40px;
 }
 
 .title-decor {
@@ -125,22 +125,31 @@
 .section__reasons-text {
   color: var(--font-color);
   font: 700 var(--text-size) / 23.4px var(--main-font, sans-serif);
-  margin-bottom: 17px;
-  padding-left: 5px;
+}
+
+.section__reasons-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.section__reasons-cover-text-column:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .section__reasons-title {
   color: var(--menu-font-color);
   font: bold var(--text-size) / 23.5px;
-  margin-block-end: 21px;
+  margin-bottom: 20px;
 }
 
 .section__reasons-subtitle {
   color: #000028;
   font-size: var(--text-size);
-  margin-block-end: 11px;
   width: 100%;
-  margin-left: 4px;
+  margin-bottom: 10px;
+}
+
+.content__section:nth-of-type(3) .section__reasons-text:last-of-type {
+  margin-bottom: 50px;
 }
 
 .text-link {
@@ -160,7 +169,6 @@
   color: #353430;
   font-weight: bold;
   margin-block-end: 20px;
-  margin-left: 5px;
 }
 
 .section__reasons-subtitle.title-decor-last {
@@ -219,8 +227,7 @@
 }
 
 @media (width >= 768px) {
-  .header {    
-    padding: 19px 20px 0 0;
+  .header {
   }
 
   .header__title {
@@ -257,10 +264,6 @@
     justify-content: end;
     align-self: flex-end;
     gap: 10px;
-  }
-
-  .content {
-    padding: 22px 20px 0 20px;
   }
 
   .content__section {
@@ -322,7 +325,6 @@
   }
 
   .content__section-gallery {
-    padding-bottom: 60px;
   }
 
   .footer::before {
