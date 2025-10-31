@@ -181,6 +181,10 @@
   gap: 10px;
 }
 
+.content__section-gallery {
+  padding-bottom: 40px;
+}
+
 .content__section-gallery-img {
   width: 100%;
   block-size: 100%;
