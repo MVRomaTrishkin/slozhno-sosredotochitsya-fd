@@ -1,1 +1,1 @@
-git@github.com:MVRomaTrishkin/slozhno-sosredotochitsya-fd.git
+https://github.com/MVRomaTrishkin/slozhno-sosredotochitsya-fd
