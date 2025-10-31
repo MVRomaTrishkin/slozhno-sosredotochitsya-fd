@@ -81,14 +81,14 @@
   border-top: 1px solid var(--menu-font-color);
   border-right: 1px solid var(--menu-font-color);
   top: 10px;
-  right: 10px ;
+  right: 0px ;
 }
 
 .header::after {
   border-bottom: 1px solid var(--menu-font-color);
   border-left: 1px solid var(--menu-font-color);
   left: 10px;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 .header__title {
@@ -226,12 +226,17 @@
 .footer::after {
   border-bottom: 1px solid var(--menu-font-color);
   border-left: 1px solid var(--menu-font-color);
-  left: 5px;
+  left: 0px;
   bottom: 10px;
 }
 
 @media (width >= 768px) {
-  .header {
+  .page {
+    padding: 10px 0 0 0;
+  }
+  
+  .header__theme-menu {
+    padding-right: 20px;
   }
 
   .header__title {
@@ -246,6 +251,7 @@
     justify-self: end;
     align-self: center;
     margin-bottom: 40px;
+    margin-right: 20px;
   }
 
   .header_span {
@@ -255,12 +261,20 @@
 
   .header::before {
     right: 20px;
-    top: 20px;
+    top: 10px;
   }
 
   .header::after {
     left: 20px;
-    bottom: 30px;
+    bottom: 20px;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .content__section:first-child {
+    padding-top: 50px;
   }
 
   .header__theme-menu-list {
@@ -271,7 +285,12 @@
   }
 
   .content__section {
-    margin-bottom: 60px;
+    padding-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .content__section:nth-of-type(3) .section__reasons-text:last-of-type {
+    margin-bottom: 0;
   }
 
   .content__section:nth-child(2n+1) {
@@ -290,6 +309,10 @@
 
   .content__section-gallery .section__reasons-subtitle {
     margin-bottom: 16px;
+  }
+
+  .content__section-gallery{
+    padding-bottom: 60px;
   }
 
   .cover-for-gallery {
@@ -328,23 +351,27 @@
   background-color: var(--bg-color, #1A232E);
   }
 
-  .content__section-gallery {
-  }
-
   .footer::before {
-  top: 10px;
+  top: 20px;
   right: 0px ;
 }
 
 .footer::after {
-  left: 20px;
-  bottom: 25px;
+  left: 0px;
+  bottom: 20px;
+  }
 }
-}
-@media (width >=1024px) {
+
+@media (width >= 1024px) {
+  .header_span {
+    right: 30px;
+    top: 10px;
+  }
+
   .header__theme-menu {
     align-self: flex-start;
     justify-self: center;
+    padding-top: 10px;
   }
 
   .header__theme-menu-list {
