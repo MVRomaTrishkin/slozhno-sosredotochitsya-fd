@@ -410,10 +410,6 @@
     gap: 20px;
   }
 
-  .content__section:nth-child(3) {
-    margin-top: 60px;
-  }
-
   .section__reasons-cover-text-column {
     flex-direction: column;
   }
