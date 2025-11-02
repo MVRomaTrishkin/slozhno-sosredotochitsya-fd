@@ -119,6 +119,13 @@
   height: fit-content;
 }
 
+.article__title {
+    font-family: 'IBM Plex mono';
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--titles-color);
+}
+
 
 .section__reasons-text {
   color: var(--font-color);
@@ -126,11 +133,11 @@
 }
 
 .section__reasons-text:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .section__reasons-cover-text-column:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .section__reasons-title {
@@ -174,7 +181,7 @@
 
 .content__section-gallery {
   padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 45px;
 }
 
 .content__section-gallery-img {

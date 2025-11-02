@@ -1,1 +1,0 @@
-https://github.com/MVRomaTrishkin/slozhno-sosredotochitsya-fd
